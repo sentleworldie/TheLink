@@ -1,0 +1,412 @@
+/* ===============================
+   TheLink Main Website Styling
+   =============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f7fb;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+/* ===============================
+   Navbar
+   =============================== */
+
+.navbar {
+    background: linear-gradient(90deg, #0d6efd, #084298) !important;
+    padding: 15px 0;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 28px;
+    color: white !important;
+    letter-spacing: 0.5px;
+}
+
+.navbar-brand i {
+    margin-right: 6px;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #dbeafe !important;
+    transform: translateY(-2px);
+}
+
+/* ===============================
+   Page Containers
+   =============================== */
+
+.container {
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+.page-title {
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 25px;
+}
+
+/* ===============================
+   Homepage Hero
+   =============================== */
+
+.hero-box {
+    background: white;
+    border-radius: 20px;
+    padding: 60px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    text-align: center;
+}
+
+.hero-box h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.hero-box span {
+    color: #0d6efd;
+}
+
+.hero-box p {
+    font-size: 18px;
+    color: #475569;
+    margin: 20px 0;
+}
+
+/* ===============================
+   Buttons
+   =============================== */
+
+.btn {
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.btn-primary {
+    background: #0d6efd;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #084298;
+}
+
+.btn-success {
+    background: #198754;
+    border: none;
+}
+
+.btn-success:hover {
+    background: #146c43;
+}
+
+.btn-danger {
+    background: #dc3545;
+    border: none;
+}
+
+.btn-warning {
+    color: white;
+    border: none;
+}
+
+/* ===============================
+   Cards
+   =============================== */
+
+.card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: 0.35s ease;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
+}
+
+.card-img-top {
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.04);
+}
+
+.card-body h5 {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.card-body p {
+    color: #475569;
+}
+
+/* ===============================
+   Dashboard Cards
+   =============================== */
+
+.dashboard-card {
+    background: white;
+    border-radius: 18px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: 0.35s ease;
+    height: 100%;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-8px);
+    background: #0d6efd;
+    color: white;
+}
+
+.dashboard-card:hover p,
+.dashboard-card:hover h5 {
+    color: white;
+}
+
+.dashboard-card .icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.dashboard-card h5 {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.dashboard-card p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* ===============================
+   Forms
+   =============================== */
+
+.form-control,
+.form-select,
+select {
+    border-radius: 12px !important;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+}
+
+.form-control:focus,
+.form-select:focus,
+select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.18);
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* ===============================
+   Tables
+   =============================== */
+
+.table {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.table th {
+    background: #0d6efd !important;
+    color: white;
+    font-weight: 600;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table tbody tr {
+    transition: 0.25s ease;
+}
+
+.table tbody tr:hover {
+    background: #eef6ff;
+}
+
+/* ===============================
+   Badges
+   =============================== */
+
+.badge {
+    padding: 8px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+}
+
+/* ===============================
+   Product Details
+   =============================== */
+
+.product-image {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+    transition: 0.35s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.03);
+}
+
+.price-text {
+    font-weight: 700;
+    color: #198754;
+}
+
+/* ===============================
+   Alerts
+   =============================== */
+
+.alert {
+    border-radius: 12px;
+}
+
+/* ===============================
+   Footer
+   =============================== */
+
+footer {
+    background: linear-gradient(90deg, #0d6efd, #084298);
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 80px;
+}
+
+footer h5 {
+    font-weight: 700;
+}
+
+footer p,
+footer small {
+    color: #e0ecff;
+}
+
+/* ===============================
+   Animations
+   =============================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===============================
+   Responsive
+   =============================== */
+
+@media (max-width: 768px) {
+    .hero-box h1 {
+        font-size: 34px;
+    }
+
+    .hero-box {
+        padding: 40px 20px;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .dashboard-card {
+        margin-bottom: 20px;
+    }
+}
+/* Dark Mode */
+
+body.dark-mode {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+body.dark-mode .hero-box,
+body.dark-mode .card,
+body.dark-mode .dashboard-card,
+body.dark-mode .table,
+body.dark-mode .form-control,
+body.dark-mode .form-select,
+body.dark-mode select,
+body.dark-mode textarea {
+    background: #1e293b !important;
+    color: #e5e7eb !important;
+}
+
+body.dark-mode .page-title,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode p,
+body.dark-mode label,
+body.dark-mode td {
+    color: #e5e7eb !important;
+}
+
+body.dark-mode .table th {
+    background: #2563eb !important;
+}
+
+body.dark-mode .table tbody tr:hover {
+    background: #334155;
+}
+
+body.dark-mode .card-body p,
+body.dark-mode .dashboard-card p {
+    color: #cbd5e1 !important;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #94a3b8;
+}
+
+body.dark-mode .badge.bg-secondary {
+    background: #475569 !important;
+}
